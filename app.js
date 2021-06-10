@@ -1,5 +1,5 @@
 /*
-  * You should write Macha code that will test the functionalities of add() and fizzBuzz() functions.
+  * You should write Mocha code that will test the functionalities of add() and fizzBuzz() functions.
   ** Don't forget to initialize npm, install Mocha, and change the scripts in the package.json to run the test suite <command npm> test.
   *** Try to use TDD - test code, implement code, refactor the code.
 */
