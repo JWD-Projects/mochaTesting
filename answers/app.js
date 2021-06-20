@@ -2,7 +2,7 @@
  * You should write Macha code that will test the functionalities of add() and fizzBuzz() functions.
  ** Don't forget to initialize npm, install Mocha, and change the scripts in the package.json to run the test suite <command npm>test.
  *** Try to use TDD - test code, implement code, refactor the code.
-*/
+ */
 /*
 Implement the add function as needed to guarantee that:
 1 - add two arguments
@@ -11,12 +11,12 @@ Implement the add function as needed to guarantee that:
 4 - returns 0 if any of the arguments in not a number
 */
 const add = (a = 0, b = 0) => {
-    if(typeof a !== 'number' || typeof b !== 'number'){
-      return 0;
-    }
-    return a + b;
-   }
-   /*
+  if (typeof a !== "number" || typeof b !== "number") {
+    return 0;
+  }
+  return a + b;
+};
+/*
    Write a program that prints the numbers.
    1 - numbers multiples of three prints “Fizz” instead of the number
    2 - numbers multiples of five prints “Buzz” instead of the number.
@@ -24,17 +24,28 @@ const add = (a = 0, b = 0) => {
    4 -  and numbers that are either multiple of three or five prints the number.
    Ex: 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, ...
    */
-   const fizzBuzz = (number) => {
-     if((number % 3 == 0) && (number % 5 == 0)){
-       return 'FizzBuzz';
-     }
-     if (number % 3 == 0) {
-       return "Fizz";
-     }
-     if (number % 5 == 0) {
-       return "Buzz";
-     }
-     return number;
-   }
-   module.exports={add, fizzBuzz};
-  
+const fizzBuzz = (number) => {
+  if (number % 3 == 0 && number % 5 == 0) {
+    return "FizzBuzz";
+  }
+  if (number % 3 == 0) {
+    return "Fizz";
+  }
+  if (number % 5 == 0) {
+    return "Buzz";
+  }
+  return number;
+};
+
+/*Implement the gatherNamesOf function as needed to guarantee that:
+    1- the function receives an array of objects with people names as a parameter and returns the property name value.
+    Ex: The array of objects is: [{name: 'John'}, {name:'Patricia'}]. It should return ['John', 'Patricia'];
+  */
+
+const gatherNamesOf = (arrayOfPeople) => {
+  return arrayOfPeople.map((person) => {
+    return person.name;
+  });
+};
+
+module.exports = { add, fizzBuzz, gatherNamesOf };
