@@ -1,0 +1,26 @@
+{
+  "name": "mochatesting",
+  "version": "1.0.0",
+  "description": "Inside app.js, you will need to create two functions according to the instructions. You will need to export these and, inside the test folder, import these functions in order to create unit tests for them.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^9.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JWD-Projects/mochaTesting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JWD-Projects/mochaTesting/issues"
+  },
+  "homepage": "https://github.com/JWD-Projects/mochaTesting#readme"
+}
